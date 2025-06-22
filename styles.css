@@ -2,7 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #87cefa;
+    background-color: #6a5acd;
 }
 
 header {
@@ -16,10 +16,14 @@ header h1 {
 
 header p{
     font-size: 1.2em;
-    color: #555;
+    color: black;
+}
+header img{
+    display: flex;
+    border-radius: 10%;
 }
 section {
-    background-color: #fdf5e6;
+    background-color: #ecebf7;
     margin: 12px 0;
     padding: 15px;
     border-radius: 8px;
@@ -43,15 +47,88 @@ footer{
     margin-top: 30px;
     font-size: 1em;
 }
+
+.btn a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+.btn a:hover{
+    color: #ff6347;
+}
+
+a i {
+    font-size: 2rem;
+    color: #333;
+    margin: 0 15px;
+}
+
+a i:hover {
+    color: #ff6347;
+}
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2em;
     }
     section h2 {
-        font-size: 1.5em;
+        font-size: 1em;
     }
     ul {
         padding-left: 15px;
     }
+        nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    }
+    
+@media (min-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    ul {
+        padding-left: 10px;
+    }
 }
 
+@media (min-width: 1024px) {
+    body {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        gap: 30px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+}
